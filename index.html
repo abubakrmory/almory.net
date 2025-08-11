@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -325,6 +326,7 @@
                 opacity: 0;
                 transform: translateX(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -336,6 +338,7 @@
                 opacity: 0;
                 transform: translateX(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -521,8 +524,8 @@
 
         /* قسم الخبرة */
         .experience {
-            background: linear-gradient(rgba(5, 15, 30, 0.8), rgba(5, 15, 30, 0.8)), 
-                        url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500') center/cover;
+            background: linear-gradient(rgba(5, 15, 30, 0.8), rgba(5, 15, 30, 0.8)),
+                url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500') center/cover;
             padding: 100px 0;
             text-align: center;
         }
@@ -555,9 +558,17 @@
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         .experience-text {
@@ -715,15 +726,15 @@
             .contact-container {
                 grid-template-columns: 1fr 1fr;
             }
-            
+
             .hero {
                 padding-top: 80px;
             }
-            
+
             nav {
                 height: 80px;
             }
-            
+
             nav.scrolled {
                 height: 70px;
             }
@@ -734,16 +745,16 @@
                 flex-direction: column-reverse;
                 text-align: center;
             }
-            
+
             .hero h1::after {
                 left: 50%;
                 transform: translateX(-50%);
             }
-            
+
             .hero-content {
                 padding: 0;
             }
-            
+
             .hero-btns {
                 justify-content: center;
             }
@@ -754,7 +765,7 @@
                 margin-right: 15px;
                 margin-left: 15px;
             }
-            
+
             .hero-btns .btn {
                 width: 100%;
                 text-align: center;
@@ -765,21 +776,21 @@
             .container {
                 width: 95%;
             }
-            
+
             .section-title h2::after {
                 margin-right: 10px;
                 margin-left: 10px;
             }
-            
+
             .section-title h2::before {
                 margin-left: 5px;
             }
-            
+
             .services-container,
             .skills-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .mobile-menu {
                 width: 80%;
             }
@@ -793,17 +804,18 @@
             .mobile-menu-btn {
                 display: block;
             }
-            
+
             .hero-btns {
                 flex-direction: column;
             }
-            
+
             .section-title h2::after {
                 display: none;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- شريط التنقل -->
     <nav id="navbar">
@@ -821,7 +833,7 @@
             </button>
         </div>
     </nav>
-    
+
     <!-- القائمة المتنقلة للجوال -->
     <div class="mobile-menu" id="mobileMenu">
         <button class="close-btn" id="closeMenu">
@@ -844,7 +856,9 @@
             <div class="hero-content">
                 <h1>مرحبًا، أنا أبو بكر موري</h1>
                 <h2>خبير برمجيات وتطوير وتدريب</h2>
-                <p class="animate-on-scroll">أقدم حلولاً تقنية متكاملة لتحويل أفكارك إلى واقع ملموس. مع أكثر من 25 عامًا من الخبرة في تطوير البرمجيات وتحليل البيانات وتصميم قواعد البيانات، أساعد الأفراد والشركات في تحقيق أهدافهم الرقمية.</p>
+                <p class="animate-on-scroll">أقدم حلولاً تقنية متكاملة لتحويل أفكارك إلى واقع ملموس. مع أكثر من 25 عامًا
+                    من الخبرة في تطوير البرمجيات وتحليل البيانات وتصميم قواعد البيانات، أساعد الأفراد والشركات في تحقيق
+                    أهدافهم الرقمية.</p>
                 <div class="hero-btns">
                     <a href="#services" class="btn btn-primary">
                         اكتشف خدماتي <i class="fas fa-arrow-left"></i>
@@ -854,12 +868,10 @@
                     </a>
                 </div>
             </div>
-            
+
             <!-- الصورة على اليسار -->
             <div class="hero-image">
-                <img src="images/1.png" 
-                     alt="أبو بكر موري" 
-                     class="profile-image animate-on-scroll">
+                <img src="images/1.png" alt="أبو بكر موري" class="profile-image animate-on-scroll">
             </div>
         </div>
     </section>
@@ -918,7 +930,8 @@
                     </div>
                     <div class="service-content">
                         <h3>تصميم المواقع الشخصية والتجارية</h3>
-                        <p>تصميم وتطوير مواقع ويب احترافية تلبي احتياجاتك، بدءًا من المواقع الشخصية البسيطة إلى المنصات التجارية المعقدة. كل موقع يتم تصميمه ليكون سريعًا، آمنًا، وسهل الاستخدام.</p>
+                        <p>تصميم وتطوير مواقع ويب احترافية تلبي احتياجاتك، بدءًا من المواقع الشخصية البسيطة إلى المنصات
+                            التجارية المعقدة. كل موقع يتم تصميمه ليكون سريعًا، آمنًا، وسهل الاستخدام.</p>
                         <ul class="service-features">
                             <li>تصميم متجاوب لجميع الأجهزة</li>
                             <li>تحسين محركات البحث (SEO)</li>
@@ -928,14 +941,15 @@
                         <a href="#contact" class="service-link">اطلب خدمتك الآن <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon">
                         <i class="fas fa-building"></i>
                     </div>
                     <div class="service-content">
                         <h3>المشاريع الحكومية والمؤسسية</h3>
-                        <p>حلول برمجية متكاملة للمؤسسات الحكومية والشركات الكبيرة، تشمل أنظمة إدارة المحتوى، أنظمة الموارد البشرية، وأنظمة إدارة المشاريع المتقدمة.</p>
+                        <p>حلول برمجية متكاملة للمؤسسات الحكومية والشركات الكبيرة، تشمل أنظمة إدارة المحتوى، أنظمة
+                            الموارد البشرية، وأنظمة إدارة المشاريع المتقدمة.</p>
                         <ul class="service-features">
                             <li>تطوير أنظمة مخصصة حسب الاحتياج</li>
                             <li>تطبيقات ويب متقدمة وآمنة</li>
@@ -945,14 +959,15 @@
                         <a href="#contact" class="service-link">اطلب خدمتك الآن <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="service-content">
                         <h3>مشاريع طلاب التخرج والبحث العلمي</h3>
-                        <p>دعم كامل لطلاب الجامعات في مشاريع التخرج والبحث العلمي، بدءًا من فكرة المشروع وحتى التنفيذ والتوثيق والعرض.</p>
+                        <p>دعم كامل لطلاب الجامعات في مشاريع التخرج والبحث العلمي، بدءًا من فكرة المشروع وحتى التنفيذ
+                            والتوثيق والعرض.</p>
                         <ul class="service-features">
                             <li>تصميم وتنفيذ مشاريع التخرج</li>
                             <li>دعم تقني وبرمجي متخصص</li>
@@ -962,14 +977,15 @@
                         <a href="#contact" class="service-link">اطلب خدمتك الآن <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon">
                         <i class="fas fa-chalkboard-teacher"></i>
                     </div>
                     <div class="service-content">
                         <h3>الدروس والتدريب في البرمجة</h3>
-                        <p>دروس خصوصية ودورات تدريبية في مختلف مجالات البرمجة وتطوير الويب، مقدمة للمبتدئين والمحترفين على حد سواء.</p>
+                        <p>دروس خصوصية ودورات تدريبية في مختلف مجالات البرمجة وتطوير الويب، مقدمة للمبتدئين والمحترفين
+                            على حد سواء.</p>
                         <ul class="service-features">
                             <li>دروس خصوصية في لغات البرمجة</li>
                             <li>دورات تدريبية متخصصة</li>
@@ -990,12 +1006,17 @@
                 <div class="years-badge">25+ سنة</div>
                 <h2>خبرة واسعة في عالم البرمجة والتطوير</h2>
                 <p class="experience-text">
-                    أمتلك أكثر من ربع قرن من الخبرة في مجال البرمجة وتطوير البرمجيات. خلال هذه السنوات، قمت بتطوير عشرات المشاريع الناجحة للعملاء من مختلف القطاعات. خبرتي تشمل تصميم وتنفيذ حلول برمجية متكاملة، تحليل البيانات، تصميم قواعد البيانات، وتقديم الدعم الفني المتكامل. أسعى دائمًا لمواكبة أحدث التقنيات وأساليب التطوير لضمان تقديم حلول عالية الجودة تلبي احتياجات العصر.
+                    أمتلك أكثر من ربع قرن من الخبرة في مجال البرمجة وتطوير البرمجيات. خلال هذه السنوات، قمت بتطوير عشرات
+                    المشاريع الناجحة للعملاء من مختلف القطاعات. خبرتي تشمل تصميم وتنفيذ حلول برمجية متكاملة، تحليل
+                    البيانات، تصميم قواعد البيانات، وتقديم الدعم الفني المتكامل. أسعى دائمًا لمواكبة أحدث التقنيات
+                    وأساليب التطوير لضمان تقديم حلول عالية الجودة تلبي احتياجات العصر.
                 </p>
                 <p class="experience-text">
-                    خلال مسيرتي المهنية، عملت مع شركات محلية ودولية، مؤسسات حكومية، وأفراد طموحين لتحويل أفكارهم إلى تطبيقات وبرمجيات فعالة. شغفي بالبرمجة لا ينتهي، وأستمتع بمشاركة معرفتي وخبرتي مع الآخرين من خلال التدريب والتوجيه.
+                    خلال مسيرتي المهنية، عملت مع شركات محلية ودولية، مؤسسات حكومية، وأفراد طموحين لتحويل أفكارهم إلى
+                    تطبيقات وبرمجيات فعالة. شغفي بالبرمجة لا ينتهي، وأستمتع بمشاركة معرفتي وخبرتي مع الآخرين من خلال
+                    التدريب والتوجيه.
                 </p>
-                
+
                 <div class="expertise-list">
                     <div class="expertise-item">تطوير البرمجيات</div>
                     <div class="expertise-item">تحليل البيانات</div>
@@ -1017,23 +1038,24 @@
             <div class="contact-container">
                 <div class="contact-info animate-on-scroll">
                     <h3>لنتحدث عن مشروعك</h3>
-                    <p>أبحث دائمًا عن فرص جديدة ومثيرة للاهتمام. سواء كان لديك سؤال أو ترغب في مناقشة مشروع، لا تتردد في التواصل معي.</p>
+                    <p>أبحث دائمًا عن فرص جديدة ومثيرة للاهتمام. سواء كان لديك سؤال أو ترغب في مناقشة مشروع، لا تتردد في
+                        التواصل معي.</p>
                     <ul class="contact-details">
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:abubakr@example.com">abubakr@example.com</a>
+                            <a href="mailto:abubakrmory@gmail.com">abubakrmory@gmail.com</a>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
-                            <a href="tel:+966500000000">+966 50 000 0000</a>
+                            <a href="tel:+966547444150">+966547444150</a>
                         </li>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>الرياض، المملكة العربية السعودية</span>
+                            <span>أبوعريش، المملكة العربية السعودية</span>
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
-                            <span>الأحد - الخميس: 9 صباحًا - 5 مساءً</span>
+                            <span>الأحد - الخميس: 9 صباحًا - 9 مساءً</span>
                         </li>
                     </ul>
                 </div>
@@ -1069,16 +1091,16 @@
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
             <div class="copyright">
-                &copy; 2023 أبو بكر موري. جميع الحقوق محفوظة.
+                &copy; 2025 أبو بكر موري. جميع الحقوق محفوظة.
             </div>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // تتبع التمرير لتغيير شريط التنقل
             const navbar = document.getElementById('navbar');
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 if (window.scrollY > 50) {
                     navbar.classList.add('scrolled');
                 } else {
@@ -1088,7 +1110,7 @@
 
             // أنيميشن للعناصر عند التمرير
             const animateElements = document.querySelectorAll('.animate-on-scroll');
-            
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -1098,7 +1120,7 @@
             }, {
                 threshold: 0.1
             });
-            
+
             animateElements.forEach(el => {
                 observer.observe(el);
             });
@@ -1111,7 +1133,7 @@
                     target.scrollIntoView({
                         behavior: 'smooth'
                     });
-                    
+
                     // إغلاق القائمة المتنقلة إذا كانت مفتوحة
                     mobileMenu.classList.remove('active');
                     overlay.classList.remove('active');
@@ -1123,27 +1145,27 @@
             const closeMenuBtn = document.getElementById('closeMenu');
             const mobileMenu = document.getElementById('mobileMenu');
             const overlay = document.getElementById('overlay');
-            
-            mobileMenuBtn.addEventListener('click', function() {
+
+            mobileMenuBtn.addEventListener('click', function () {
                 mobileMenu.classList.add('active');
                 overlay.classList.add('active');
                 document.body.style.overflow = 'hidden';
             });
-            
-            closeMenuBtn.addEventListener('click', function() {
+
+            closeMenuBtn.addEventListener('click', function () {
                 mobileMenu.classList.remove('active');
                 overlay.classList.remove('active');
                 document.body.style.overflow = 'auto';
             });
-            
-            overlay.addEventListener('click', function() {
+
+            overlay.addEventListener('click', function () {
                 mobileMenu.classList.remove('active');
                 overlay.classList.remove('active');
                 document.body.style.overflow = 'auto';
             });
-            
+
             // إغلاق القائمة عند تغيير حجم الشاشة إذا أصبحت كبيرة
-            window.addEventListener('resize', function() {
+            window.addEventListener('resize', function () {
                 if (window.innerWidth > 768) {
                     mobileMenu.classList.remove('active');
                     overlay.classList.remove('active');
@@ -1153,4 +1175,5 @@
         });
     </script>
 </body>
+
 </html>
